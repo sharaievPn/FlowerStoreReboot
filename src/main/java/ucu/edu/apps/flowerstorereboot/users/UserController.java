@@ -21,12 +21,12 @@ public class UserController {
     }
 
     @GetMapping("/list")
-    public List<AppUser> getUsers(){
+    public List<AppUser> getUsers() {
         return userService.getUsers();
     }
 
     @PostMapping("/add")
-    public void addUser(@RequestBody AppUser user){
+    public void addUser(@RequestBody AppUser user) {
         userService.addUser(user);
     }
 
